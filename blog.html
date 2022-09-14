@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current Info Portal</title>
+    <title>New Blogs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +23,8 @@
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.</div>
+                        <div class="accordion-body"> The difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created
+                            and assigned to that particular tab.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -33,8 +34,7 @@
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"> There are some differences between arrow function and regular function. These are mainly depends on <br> 1. syntax, <br> 2. arguments binding, <br> 3. using new keyword, <br> 4. no duplicate name parameters and <br> 5. use of this
-                            keyword .
+                        <div class="accordion-body"> In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the like.
                         </div>
                     </div>
                 </div>
@@ -46,22 +46,26 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            Foreach takes a callback function and run that callback function on each element of array one by one. Basically forEach works as a traditional for loop looping over the array and providing you array elements to do operations on them. The main difference
-                            between forEach and filter is that forEach just loop over the array and executes the callback but filter executes the callback and check its return value. If the value is true element remains in the resulting array but if the
-                            return value is false the element will be removed for the resulting array. Also take notice filter does not update the existing array it will return a new filtered array every time. Like filter, map also returns an array. The
-                            provided callback to map modifies the array elements and save them into the new array upon completion that array get returned as the mapped array. And finally Find method finds out the first element of the array when the callback
-                            function gives the condition.
+                            Event Loop : The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. Easy Definition : The Event Loop
+                            has one simple job — to monitor the Call Stack and the Callback Queue or Message Queue. If the Call Stack is empty, it will take the first event from the Callback queue and will push it to the Call Stack, which effectively
+                            runs it. Such an iteration is called a tick in the Event Loop. Each event is just a function callback. Easiest explanation : When any Asynchronous event occur such as setTimeOut or promises... Then these task takes some time
+                            to complete I/O if they have any. If they completed their I/O or don't have any, then they simply put into message queue or callback queue. Then event loop will firstly execute the call stack tasks and then look for callback
+                            or message queue and then execute it.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        Explain different ways to get undefined in JavaScript?
+                        Explain different ways to get undefined in JavaScript.
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Template sting/ literals provide an easy way to interpolate variables and expressions into strings. We can added multiple line easily bu using template string.</div>
+                        <div class="accordion-body">
+                            8 ways to get undefined in JavaScript <br> 1.Variable that is not initialized will give undefined. <br> 2. Function with no return. <br> 3. Parameter that is not passed will give undefined. <br> 4. If return has nothing on
+                            the right side will return undefined. <br> 5. Property that doesn't exist on an object will give undefined <br> 6. Accessing array elements outside of the index range. <br> 7. Deleting an element inside an array. <br> 8. Set
+                            a value directly to undefined.
+                        </div>
                     </div>
                 </div>
             </div>
